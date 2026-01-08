@@ -1,15 +1,15 @@
-name: University Job Crawler
+name: University-Job-Crawler
 
 on:
   schedule:
-    - cron: '0 * * * *'  # 매 시간 정각마다 자동으로 실행
-  workflow_dispatch:      # 사용자가 직접 버튼을 눌러 수동 실행 가능
+    - cron: '0 * * * *'
+  workflow_dispatch:
 
 jobs:
-  build:
+  run-crawler:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Set up Python
@@ -18,19 +18,18 @@ jobs:
           python-version: '3.9'
 
       - name: Install dependencies
-        run: |
-          pip install requests beautifulsoup4
+        run: pip install requests beautifulsoup4
 
-      - name: Run Scraper
+      - name: Run Python Script
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python crawler.py
 
-      - name: Commit and Push changes
+      - name: Update Database
         run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
           git add last_posts.json
           git commit -m "Update last posts" || exit 0
           git push
