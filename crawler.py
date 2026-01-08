@@ -7,19 +7,19 @@ import json
 UNIVERSITIES = [
     {
         "name": "강릉원주대",
-        "url": "https://www.gwnu.ac.kr/kr/635/subview.do",
+        "url": "https://www.gwnu.ac.kr/kr/7924/subview.do",
         "selector": "tr:not(.notice) td.td-subject a", # 공지(notice) 제외한 일반글
         "base_url": "https://www.gwnu.ac.kr"
     },
     {
         "name": "가톨릭관동대",
-        "url": "https://www.cku.ac.kr/cku/475/subview.do",
+        "url": "https://www.cku.ac.kr/cku_kr/5787/subview.do",
         "selector": "tr:not(.notice) td.td-subject a",
         "base_url": "https://www.cku.ac.kr"
     },
     {
         "name": "강릉영동대",
-        "url": "https://www.gyc.ac.kr/gyc/134/subview.do",
+        "url": "https://www.gyu.ac.kr/gyu/selectBbsNttList.do?bbsNo=210&key=387",
         "selector": "tr:not(.notice) td.td-subject a",
         "base_url": "https://www.gyc.ac.kr"
     }
