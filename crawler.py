@@ -13,7 +13,7 @@ UNIVERSITIES = [
     },
     {
         "name": "가톨릭관동대",
-        "url": "https://www.cku.ac.kr/cku_kr/5787/subview.do",
+        "url": "https://www.cku.ac.kr/cku_kr/5787/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGY2t1X2tyJTJGMTIwMiUyRmFydGNsTGlzdC5kbyUzRmJic0NsU2VxJTNEMTU4NCUyNmJic09wZW5XcmRTZXElM0QlMjZpc1ZpZXdNaW5lJTNEZmFsc2UlMjZzcmNoQ29sdW1uJTNEc2olMjZzcmNoV3JkJTNEJTI2",
         "selector": "tr:not(.notice) td.td-subject a",
         "base_url": "https://www.cku.ac.kr"
     },
