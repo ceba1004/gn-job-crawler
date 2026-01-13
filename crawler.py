@@ -7,7 +7,7 @@ import json
 UNIVERSITIES = [
     {
         "name": "강릉원주대",
-        "url": "https://www.gwnu.ac.kr/kr/7924/subview.do",
+        "url": "https://www.gwnu.ac.kr/kr/7924/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGa3IlMkYxNjIwJTJGYXJ0Y2xMaXN0LmRvJTNGcGFnZSUzRDElMjZzcmNoQ29sdW1uJTNEc2olMjZzcmNoV3JkJTNEJTI2YmJzQ2xTZXElM0QlMjZiYnNPcGVuV3JkU2VxJTNEJTI2cmdzQmduZGVTdHIlM0QlMjZyZ3NFbmRkZVN0ciUzRCUyNmlzVmlld01pbmUlM0RmYWxzZSUyNnBhc3N3b3JkJTNEJTI2",
         "selector": "tr:not(.notice) td.td-subject a", # 공지(notice) 제외한 일반글
         "base_url": "https://www.gwnu.ac.kr"
     },
@@ -19,7 +19,7 @@ UNIVERSITIES = [
     },
     {
         "name": "강릉영동대",
-        "url": "https://www.gyu.ac.kr/gyu/selectBbsNttList.do?bbsNo=210&key=387",
+        "url": "https://www.gyu.ac.kr/gyu/selectBbsNttList.do?key=387&bbsNo=210&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=1",
         "selector": "tr:not(.notice) td.td-subject a",
         "base_url": "https://www.gyc.ac.kr"
     }
